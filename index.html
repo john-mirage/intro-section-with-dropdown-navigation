@@ -14,6 +14,7 @@
     <body>
         <web-bar></web-bar>
         <web-hero></web-hero>
+        <web-sidebar></web-sidebar>
 
         <template id="web-bar">
             <header class="bar">
@@ -41,6 +42,41 @@
                     <img class="logo" src="/src/assets/images/client-maker.svg" alt="maker logo">
                 </div>
             </div>
+        </template>
+
+        <template id="web-sidebar">
+            <dialog class="sidebar" id="sidebar">
+                <button class="button" id="mobile-menu-close-button">
+                    <img class="close-icon" src="/src/assets/images/icon-close-menu.svg" alt="close icon">
+                </button>
+                <nav class="navigation">
+                    <details class="dropdown">
+                        <summary class="dropdown__header">
+                            <div class="link link--no-mb">Features</div>
+                            <div class="arrow-icon"></div>
+                        </summary>
+                        <div class="dropdown__body">
+                            <a class="link" href="#"><img class="link-icon" src="/src/assets/images/icon-todo.svg" alt="todo icon">Todo List</a>
+                            <a class="link" href="#"><img class="link-icon" src="/src/assets/images/icon-calendar.svg" alt="calendar icon">Calendar</a>
+                            <a class="link" href="#"><img class="link-icon" src="/src/assets/images/icon-reminders.svg" alt="reminder icon">Reminders</a>
+                            <a class="link" href="#"><img class="link-icon" src="/src/assets/images/icon-planning.svg" alt="planning icon">Planning</a>
+                        </div>
+                    </details>
+                    <details class="dropdown">
+                        <summary class="dropdown__header">
+                            <p class="link link--no-mb">Company</p>
+                            <div class="arrow-icon"></div>
+                        </summary>
+                        <div class="dropdown__body">
+                            <a class="link" href="#">History</a>
+                            <a class="link" href="#">Our Team</a>
+                            <a class="link" href="#">Blog</a>
+                        </div>
+                    </details>
+                    <a class="link" href="#">Careers</a>
+                    <a class="link" href="#">About</a>
+                </nav>
+            </dialog>
         </template>
 
         <script type="module" src="/src/main.ts"></script>

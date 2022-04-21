@@ -1,0 +1,90 @@
+.sidebar {
+    box-sizing: border-box;
+    left: auto;
+    right: 0;
+    width: 240px;
+    height: 100vh;
+    max-height: 100vh;
+    border: none;
+    background-color: var(--color-almost-white);
+    padding: 16px 16px 16px 24px;
+}
+
+.sidebar::backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dropdown__header {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.dropdown__body {
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    padding-left: 24px;
+}
+
+.button {
+    box-sizing: border-box;
+    display: flex;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    margin-left: auto;
+    margin-bottom: 4px;
+}
+
+.link {
+    box-sizing: border-box;
+    display: block;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 500;
+    color: var(--color-medium-gray);
+    text-decoration: none;
+    margin: 0 0 16px 0;
+}
+
+.link--no-mb {
+    margin: 0;
+}
+
+.link:last-child {
+    margin: 0;
+}
+
+.link-icon {
+    box-sizing: border-box;
+    width: 16px;
+    height: auto;
+    margin-right: 12px;
+}
+
+.arrow-icon {
+    box-sizing: border-box;
+    width: 12px;
+    height: 12px;
+    background-image: url("/src/assets/images/icon-arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-left: 12px;
+}
+
+.close-icon {
+    width: 24px;
+    height: auto;
+    margin: auto;
+}
+
+.dropdown[open] .arrow-icon {
+    background-image: url("/src/assets/images/icon-arrow-up.svg");
+}
