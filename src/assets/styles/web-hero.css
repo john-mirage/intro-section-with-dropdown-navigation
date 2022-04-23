@@ -68,18 +68,21 @@
 
 .hero__grid {
     box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     gap: 24px;
-    width: 100%;
+    width: auto;
     height: auto;
 }
 
 .hero__logo {
+    flex: 0 1 60px;
     box-sizing: border-box;
     max-width: 100%;
-    width: 100%;
+    width: auto;
     height: auto;
 }
 
@@ -92,6 +95,12 @@
 @media screen and (min-width: 576px) {
     .hero {
         max-width: 576px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero__picture {
+        width: 576px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -116,6 +125,8 @@
         flex: 0 0 480px;
         width: 480px;
         order: 2;
+        margin-left: 0;
+        margin-right: 0;
         margin-bottom: 0;
     }
 
@@ -150,6 +161,7 @@
     }
 
     .hero__grid {
+        justify-content: flex-start;
         margin-top: auto;
         gap: 32px;
     }
