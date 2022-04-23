@@ -122,8 +122,8 @@
     }
 
     .hero__picture {
-        flex: 0 0 480px;
-        width: 480px;
+        flex: 0 0 400px;
+        width: 400px;
         order: 2;
         margin-left: 0;
         margin-right: 0;
@@ -163,13 +163,17 @@
     .hero__grid {
         justify-content: flex-start;
         margin-top: auto;
-        gap: 32px;
     }
 }
 
 @media screen and (min-width: 1225px) {
     .hero {
         max-width: 1225px;
+    }
+
+    .hero__picture {
+        flex: 0 0 480px;
+        width: 480px;
     }
 
     .hero__cta {
@@ -179,5 +183,9 @@
     .hero__title {
         font-size: 80px;
         line-height: 80px;
+    }
+
+    .hero__grid {
+        gap: 32px;
     }
 }
