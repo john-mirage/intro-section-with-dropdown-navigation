@@ -9,7 +9,7 @@ class WebSidebar extends HTMLElement {
         style.setAttribute("href", "src/assets/styles/web-sidebar.css");
         this.shadowRoot?.append(style, sidebar.cloneNode(true));
         const sidebarShadow = this.shadowRoot?.querySelector("#sidebar");
-        const sidebarButtonShadow = this.shadowRoot?.querySelector(".button");
+        const sidebarButtonShadow = this.shadowRoot?.querySelector(".sidebar__button");
         window.addEventListener("web-open-sidebar", () => {
             sidebarShadow.showModal();
         });

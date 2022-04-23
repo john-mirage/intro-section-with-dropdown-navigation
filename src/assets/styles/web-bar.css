@@ -11,17 +11,25 @@
     margin-bottom: 24px;
 }
 
-.section {
+.bar__section {
     box-sizing: border-box;
     flex: 0 0 auto;
 }
 
-.logo {
+.bar__navigation {
+    display: none;
+}
+
+.bar__logo {
     width: auto;
     height: 28px;
 }
 
-.button {
+.bar__text-button {
+    display: none;
+}
+
+.bar__icon-button {
     box-sizing: border-box;
     display: flex;
     width: 32px;
@@ -32,7 +40,7 @@
     margin-bottom: 4px;
 }
 
-.icon {
+.bar__icon {
     width: 32px;
     height: auto;
     margin: auto;

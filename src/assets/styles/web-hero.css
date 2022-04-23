@@ -1,4 +1,10 @@
-.image {
+.hero {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+}
+
+.hero__image {
     box-sizing: border-box;
     max-width: 100%;
     width: 100%;
@@ -6,14 +12,14 @@
     margin-bottom: 48px;
 }
 
-.cta {
+.hero__cta {
     box-sizing: border-box;
     padding-left: 16px;
     padding-right: 16px;
     text-align: center;
 }
 
-.title {
+.hero__title {
     box-sizing: border-box;
     font-size: 36px;
     font-weight: 700;
@@ -22,7 +28,7 @@
     margin: 0 0 16px 0;
 }
 
-.subtitle {
+.hero__subtitle {
     box-sizing: border-box;
     font-size: 16px;
     font-weight: 500;
@@ -31,7 +37,7 @@
     margin: 0 0 24px 0;
 }
 
-.button {
+.hero__button {
     display: inline-block;
     min-width: 136px;
     height: 48px;
@@ -45,7 +51,7 @@
     margin-bottom: 48px;
 }
 
-.grid {
+.hero__grid {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -54,7 +60,7 @@
     height: auto;
 }
 
-.logo {
+.hero__logo {
     box-sizing: border-box;
     max-width: 100%;
     width: 100%;
