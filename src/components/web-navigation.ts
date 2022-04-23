@@ -6,7 +6,7 @@ class WebNavigation extends HTMLElement {
         this.attachShadow({ mode: "open" });
         const style = document.createElement("link");
         style.setAttribute("rel", "stylesheet");
-        style.setAttribute("href", "src/assets/styles/web-navigation.css");
+        style.setAttribute("href", "/intro-section-with-dropdown-navigation/src/assets/styles/web-navigation.css");
         this.shadowRoot?.append(style, navigation.cloneNode(true));
     }
 }
