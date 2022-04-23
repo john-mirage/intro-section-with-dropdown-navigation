@@ -6,7 +6,7 @@ class WebBar extends HTMLElement {
         this.attachShadow({ mode: "open" });
         const style = document.createElement("link");
         style.setAttribute("rel", "stylesheet");
-        style.setAttribute("href", "/intro-section-with-dropdown-navigation/src/assets/styles/web-bar.css");
+        style.setAttribute("href", "/intro-section-with-dropdown-navigation/assets/styles/web-bar.css");
         this.shadowRoot?.append(style, bar.cloneNode(true));
         const button = this.shadowRoot?.querySelector(".bar__icon-button");
         const buttonEvent = new CustomEvent("web-open-sidebar");

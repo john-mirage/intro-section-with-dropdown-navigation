@@ -6,7 +6,7 @@ class WebHero extends HTMLElement {
         this.attachShadow({ mode: "open" });
         const style = document.createElement("link");
         style.setAttribute("rel", "stylesheet");
-        style.setAttribute("href", "/intro-section-with-dropdown-navigation/src/assets/styles/web-hero.css");
+        style.setAttribute("href", "/intro-section-with-dropdown-navigation/assets/styles/web-hero.css");
         this.shadowRoot?.append(style, hero.cloneNode(true));
     }
 }

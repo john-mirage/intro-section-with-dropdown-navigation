@@ -6,7 +6,7 @@ class WebSidebar extends HTMLElement {
         this.attachShadow({ mode: "open" });
         const style = document.createElement("link");
         style.setAttribute("rel", "stylesheet");
-        style.setAttribute("href", "/intro-section-with-dropdown-navigation/src/assets/styles/web-sidebar.css");
+        style.setAttribute("href", "/intro-section-with-dropdown-navigation/assets/styles/web-sidebar.css");
         this.shadowRoot?.append(style, sidebar.cloneNode(true));
         const sidebarShadow = this.shadowRoot?.querySelector("#sidebar") as any;
         const sidebarButtonShadow = this.shadowRoot?.querySelector(".sidebar__button");
