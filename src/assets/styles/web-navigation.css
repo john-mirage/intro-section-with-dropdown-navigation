@@ -64,11 +64,48 @@
 }
 
 .link:last-child {
-    margin: 0;
+    margin-bottom: 0;
 }
 
 .link__icon {
     box-sizing: border-box;
     width: 20px;
     height: auto;
+}
+
+@media screen and (min-width: 992px) {
+    .navigation {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .dropdown {
+        position: relative;
+        margin: 0 32px 0 0;
+    }
+
+    .dropdown__header {
+        gap: 4px;
+    }
+
+    .dropdown__body {
+        position: absolute;
+        bottom: -20px;
+        right: 0;
+        transform: translateY(100%);
+        width: 153px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        margin: 0;
+        padding-left: 0;
+        background-color: var(--color-almost-white);
+    }
+
+    .link {
+        margin: 0;
+    }
+
+    .link--ml {
+        margin-left: 32px;
+    }
 }

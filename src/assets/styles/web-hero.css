@@ -52,6 +52,7 @@
     height: 48px;
     border: none;
     background-color: var(--color-almost-black);
+    border: 2px solid var(--color-almost-black);
     font-family: inherit;
     font-size: 16px;
     font-weight: 500;
@@ -61,10 +62,15 @@
     cursor: pointer;
 }
 
+.hero__button:hover {
+    background-color: transparent;
+    color: var(--color-almost-black);
+}
+
 .hero__grid {
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
     width: 100%;
     height: auto;
@@ -75,6 +81,12 @@
     max-width: 100%;
     width: 100%;
     height: auto;
+}
+
+@media screen and (min-width: 348px) {
+    .hero__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 @media screen and (min-width: 576px) {
@@ -121,6 +133,7 @@
     .hero__title {
         font-size: 56px;
         line-height: 64px;
+        margin-top: 32px;
     }
 
     .hero__subtitle {
@@ -133,6 +146,7 @@
     .hero__button {
         min-width: 164px;
         height: 56px;
+        font-size: 18px;
     }
 
     .hero__grid {
